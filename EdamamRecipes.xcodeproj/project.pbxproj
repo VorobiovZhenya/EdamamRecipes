@@ -14,6 +14,7 @@
 		EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */; };
 		EED97E3D1D5FBAE500B1754D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3C1D5FBAE500B1754D /* Assets.xcassets */; };
 		EED97E401D5FBAE500B1754D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */; };
+		EED97E491D5FCFA800B1754D /* logo-site-header.png in Resources */ = {isa = PBXBuildFile; fileRef = EED97E481D5FCFA800B1754D /* logo-site-header.png */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -28,6 +29,7 @@
 		EED97E3C1D5FBAE500B1754D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED97E3F1D5FBAE500B1754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EED97E411D5FBAE500B1754D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		EED97E481D5FCFA800B1754D /* logo-site-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-site-header.png"; path = "Resources/logo-site-header.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -69,6 +71,7 @@
 				EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */,
 				EED97E411D5FBAE500B1754D /* Info.plist */,
 				EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */,
+				EED97E471D5FCE7D00B1754D /* Resources */,
 				EED97E2D1D5FBAE500B1754D /* Supporting Files */,
 			);
 			path = EdamamRecipes;
@@ -80,6 +83,14 @@
 				EED97E2E1D5FBAE500B1754D /* main.m */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		EED97E471D5FCE7D00B1754D /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EED97E481D5FCFA800B1754D /* logo-site-header.png */,
+			);
+			name = Resources;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +150,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				EED97E491D5FCFA800B1754D /* logo-site-header.png in Resources */,
 				EED97E401D5FBAE500B1754D /* LaunchScreen.storyboard in Resources */,
 				EED97E3D1D5FBAE500B1754D /* Assets.xcassets in Resources */,
 				EED97E381D5FBAE500B1754D /* Main.storyboard in Resources */,
