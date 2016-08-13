@@ -1,0 +1,324 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		EED97E2F1D5FBAE500B1754D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E2E1D5FBAE500B1754D /* main.m */; };
+		EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E311D5FBAE500B1754D /* AppDelegate.m */; };
+		EED97E351D5FBAE500B1754D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E341D5FBAE500B1754D /* ViewController.m */; };
+		EED97E381D5FBAE500B1754D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED97E361D5FBAE500B1754D /* Main.storyboard */; };
+		EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */; };
+		EED97E3D1D5FBAE500B1754D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3C1D5FBAE500B1754D /* Assets.xcassets */; };
+		EED97E401D5FBAE500B1754D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		EED97E2A1D5FBAE500B1754D /* EdamamRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdamamRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EED97E2E1D5FBAE500B1754D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		EED97E301D5FBAE500B1754D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		EED97E311D5FBAE500B1754D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		EED97E331D5FBAE500B1754D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		EED97E341D5FBAE500B1754D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EED97E371D5FBAE500B1754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		EED97E3A1D5FBAE500B1754D /* EdamamRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EdamamRecipes.xcdatamodel; sourceTree = "<group>"; };
+		EED97E3C1D5FBAE500B1754D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EED97E3F1D5FBAE500B1754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		EED97E411D5FBAE500B1754D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EED97E271D5FBAE500B1754D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		EED97E211D5FBAE500B1754D = {
+			isa = PBXGroup;
+			children = (
+				EED97E2C1D5FBAE500B1754D /* EdamamRecipes */,
+				EED97E2B1D5FBAE500B1754D /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		EED97E2B1D5FBAE500B1754D /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EED97E2A1D5FBAE500B1754D /* EdamamRecipes.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EED97E2C1D5FBAE500B1754D /* EdamamRecipes */ = {
+			isa = PBXGroup;
+			children = (
+				EED97E301D5FBAE500B1754D /* AppDelegate.h */,
+				EED97E311D5FBAE500B1754D /* AppDelegate.m */,
+				EED97E331D5FBAE500B1754D /* ViewController.h */,
+				EED97E341D5FBAE500B1754D /* ViewController.m */,
+				EED97E361D5FBAE500B1754D /* Main.storyboard */,
+				EED97E3C1D5FBAE500B1754D /* Assets.xcassets */,
+				EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */,
+				EED97E411D5FBAE500B1754D /* Info.plist */,
+				EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */,
+				EED97E2D1D5FBAE500B1754D /* Supporting Files */,
+			);
+			path = EdamamRecipes;
+			sourceTree = "<group>";
+		};
+		EED97E2D1D5FBAE500B1754D /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				EED97E2E1D5FBAE500B1754D /* main.m */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EED97E291D5FBAE500B1754D /* EdamamRecipes */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EED97E441D5FBAE500B1754D /* Build configuration list for PBXNativeTarget "EdamamRecipes" */;
+			buildPhases = (
+				EED97E261D5FBAE500B1754D /* Sources */,
+				EED97E271D5FBAE500B1754D /* Frameworks */,
+				EED97E281D5FBAE500B1754D /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = EdamamRecipes;
+			productName = EdamamRecipes;
+			productReference = EED97E2A1D5FBAE500B1754D /* EdamamRecipes.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EED97E221D5FBAE500B1754D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 0730;
+				ORGANIZATIONNAME = Zhenka;
+				TargetAttributes = {
+					EED97E291D5FBAE500B1754D = {
+						CreatedOnToolsVersion = 7.3.1;
+					};
+				};
+			};
+			buildConfigurationList = EED97E251D5FBAE500B1754D /* Build configuration list for PBXProject "EdamamRecipes" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EED97E211D5FBAE500B1754D;
+			productRefGroup = EED97E2B1D5FBAE500B1754D /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EED97E291D5FBAE500B1754D /* EdamamRecipes */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EED97E281D5FBAE500B1754D /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED97E401D5FBAE500B1754D /* LaunchScreen.storyboard in Resources */,
+				EED97E3D1D5FBAE500B1754D /* Assets.xcassets in Resources */,
+				EED97E381D5FBAE500B1754D /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EED97E261D5FBAE500B1754D /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EED97E351D5FBAE500B1754D /* ViewController.m in Sources */,
+				EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */,
+				EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */,
+				EED97E2F1D5FBAE500B1754D /* main.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		EED97E361D5FBAE500B1754D /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED97E371D5FBAE500B1754D /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				EED97E3F1D5FBAE500B1754D /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		EED97E421D5FBAE500B1754D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		EED97E431D5FBAE500B1754D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EED97E451D5FBAE500B1754D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EdamamRecipes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZV.EdamamRecipes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		EED97E461D5FBAE500B1754D /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				INFOPLIST_FILE = EdamamRecipes/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				PRODUCT_BUNDLE_IDENTIFIER = ZV.EdamamRecipes;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EED97E251D5FBAE500B1754D /* Build configuration list for PBXProject "EdamamRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED97E421D5FBAE500B1754D /* Debug */,
+				EED97E431D5FBAE500B1754D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EED97E441D5FBAE500B1754D /* Build configuration list for PBXNativeTarget "EdamamRecipes" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EED97E451D5FBAE500B1754D /* Debug */,
+				EED97E461D5FBAE500B1754D /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				EED97E3A1D5FBAE500B1754D /* EdamamRecipes.xcdatamodel */,
+			);
+			currentVersion = EED97E3A1D5FBAE500B1754D /* EdamamRecipes.xcdatamodel */;
+			path = EdamamRecipes.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = EED97E221D5FBAE500B1754D /* Project object */;
+}
