@@ -29,7 +29,7 @@
 		EED97E3C1D5FBAE500B1754D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED97E3F1D5FBAE500B1754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		EED97E411D5FBAE500B1754D /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		EED97E481D5FCFA800B1754D /* logo-site-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-site-header.png"; path = "Resources/logo-site-header.png"; sourceTree = "<group>"; };
+		EED97E481D5FCFA800B1754D /* logo-site-header.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "logo-site-header.png"; path = "Resources/Images/logo-site-header.png"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -43,6 +43,14 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		EE2EC2FF1D610C2C00A12567 /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				EED97E481D5FCFA800B1754D /* logo-site-header.png */,
+			);
+			name = Images;
+			sourceTree = "<group>";
+		};
 		EED97E211D5FBAE500B1754D = {
 			isa = PBXGroup;
 			children = (
@@ -66,9 +74,9 @@
 				EED97E311D5FBAE500B1754D /* AppDelegate.m */,
 				EED97E331D5FBAE500B1754D /* ViewController.h */,
 				EED97E341D5FBAE500B1754D /* ViewController.m */,
-				EED97E361D5FBAE500B1754D /* Main.storyboard */,
 				EED97E3C1D5FBAE500B1754D /* Assets.xcassets */,
 				EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */,
+				EED97E361D5FBAE500B1754D /* Main.storyboard */,
 				EED97E411D5FBAE500B1754D /* Info.plist */,
 				EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */,
 				EED97E471D5FCE7D00B1754D /* Resources */,
@@ -88,7 +96,7 @@
 		EED97E471D5FCE7D00B1754D /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				EED97E481D5FCFA800B1754D /* logo-site-header.png */,
+				EE2EC2FF1D610C2C00A12567 /* Images */,
 			);
 			name = Resources;
 			sourceTree = "<group>";
@@ -316,6 +324,7 @@
 				EED97E461D5FBAE500B1754D /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 
