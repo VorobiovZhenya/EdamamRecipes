@@ -1,12 +1,12 @@
 //
-//  ViewController.h
+//  EdamamRequest.h
 //  EdamamRecipes
 //
-//  Created by Zhenya on 8/13/16.
+//  Created by Zhenya on 8/16/16.
 //  Copyright © 2016 Zhenka. All rights reserved.
 //
 
-#import <UIKit/UIKit.h>
+#import <Foundation/Foundation.h>
 
 NSString *queryText;
 NSString *appID;
@@ -15,8 +15,6 @@ NSString *requestString;
 NSURL *URLString;
 NSURLRequest *URLRequestString;
 NSData *responseData;
-
-@interface ViewController : UIViewController
+@interface EdamamRequest : NSObject
 
 @end
-

@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE93A6381D626EAF009256FA /* EdamamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE93A6371D626EAF009256FA /* EdamamRequest.m */; };
 		EED97E2F1D5FBAE500B1754D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E2E1D5FBAE500B1754D /* main.m */; };
 		EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E311D5FBAE500B1754D /* AppDelegate.m */; };
 		EED97E351D5FBAE500B1754D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E341D5FBAE500B1754D /* ViewController.m */; };
@@ -18,6 +19,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE93A6361D626EAF009256FA /* EdamamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdamamRequest.h; path = Model/EdamamRequest.h; sourceTree = "<group>"; };
+		EE93A6371D626EAF009256FA /* EdamamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdamamRequest.m; path = Model/EdamamRequest.m; sourceTree = "<group>"; };
 		EED97E2A1D5FBAE500B1754D /* EdamamRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdamamRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		EED97E2E1D5FBAE500B1754D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EED97E301D5FBAE500B1754D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -51,6 +54,15 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		EE93A6351D626E01009256FA /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EE93A6361D626EAF009256FA /* EdamamRequest.h */,
+				EE93A6371D626EAF009256FA /* EdamamRequest.m */,
+			);
+			name = Model;
+			sourceTree = "<group>";
+		};
 		EED97E211D5FBAE500B1754D = {
 			isa = PBXGroup;
 			children = (
@@ -70,6 +82,7 @@
 		EED97E2C1D5FBAE500B1754D /* EdamamRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				EE93A6351D626E01009256FA /* Model */,
 				EED97E301D5FBAE500B1754D /* AppDelegate.h */,
 				EED97E311D5FBAE500B1754D /* AppDelegate.m */,
 				EED97E331D5FBAE500B1754D /* ViewController.h */,
@@ -176,6 +189,7 @@
 				EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */,
 				EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */,
 				EED97E2F1D5FBAE500B1754D /* main.m in Sources */,
+				EE93A6381D626EAF009256FA /* EdamamRequest.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

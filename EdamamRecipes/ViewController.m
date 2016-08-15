@@ -16,7 +16,7 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    
+        
     NSLog(@"viewdidload");
     queryText = @"chicken";
     appID = @"20707401";
