@@ -7,14 +7,18 @@
 //
 
 #import <Foundation/Foundation.h>
+//#import <UIKit/UIKit.h>
 
-NSString *queryText;
-NSString *appID;
-NSString *appKey;
-NSString *requestString;
-NSURL *URLString;
-NSURLRequest *URLRequestString;
-NSData *responseData;
 @interface EdamamRequest : NSObject
-
+{
+    NSString *appID;
+    NSString *appKey;
+    NSString *requestString;
+    NSURL *URLString;
+    NSURLRequest *URLRequestString;
+    NSData *responseData;
+}
+    -(void) setAppID : (NSString*) theAppID;
+    -(void) setAppKey : (NSString*) theAppKey;
+    -(NSString*) recipeSearch : (NSString*) queryText;
 @end

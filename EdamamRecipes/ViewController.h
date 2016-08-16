@@ -8,14 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-NSString *queryText;
-NSString *appID;
-NSString *appKey;
-NSString *requestString;
-NSURL *URLString;
-NSURLRequest *URLRequestString;
-NSData *responseData;
-
 @interface ViewController : UIViewController
 
 @end
