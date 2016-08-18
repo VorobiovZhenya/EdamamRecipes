@@ -7,7 +7,6 @@
 //
 
 #import "ViewController.h"
-#import "EdamamRequest.h"
 
 @interface ViewController ()
 
@@ -15,22 +14,23 @@
 
 @implementation ViewController
 
+@synthesize requestTextField;
+@synthesize searchButton;
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"viewdidload");
-    NSString *ID = @"20707401";
-    NSString *Key = @"81ecd15b5c9d825f81d010ac2e067f3b";
-    EdamamRequest *edamamRequest = [[EdamamRequest alloc] init];
-    [edamamRequest setAppID:ID];
-    [edamamRequest setAppKey:Key];
-    NSLog(@"%@",[edamamRequest recipeSearch:@"potato"]);
-    
-    
-    
-    }
+    edamamReq = [[EdamamRequest alloc] init];
+    [edamamReq setAppID:ID];
+    [edamamReq setAppKey:Key];
+}
+
+-(void)touchDownSearch:(id)sender{
+    NSLog(@"%@",[edamamReq recipeSearch:self.requestTextField.text]);
+}
+
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
-
 @end
