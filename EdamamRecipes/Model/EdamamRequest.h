@@ -7,15 +7,12 @@
 //
 
 #import <Foundation/Foundation.h>
-//#import <UIKit/UIKit.h>
 
 @interface EdamamRequest : NSObject
 {
     NSString *appID;
     NSString *appKey;
-    NSString *requestString;
     NSURL *URLString;
-    NSURLRequest *URLRequestString;
     NSData *responseData;
 }
     -(void) setAppID : (NSString*) theAppID;

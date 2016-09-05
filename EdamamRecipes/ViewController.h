@@ -9,12 +9,11 @@
 #import <UIKit/UIKit.h>
 #import "EdamamRequest.h"
 
-
 NSString *ID = @"20707401";
 NSString *Key = @"81ecd15b5c9d825f81d010ac2e067f3b";
 EdamamRequest *edamamReq;
 
-@interface ViewController : UIViewController
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
 
 @property (weak, nonatomic) IBOutlet UITextField *requestTextField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
