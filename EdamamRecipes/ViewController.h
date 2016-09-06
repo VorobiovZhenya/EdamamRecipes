@@ -13,11 +13,15 @@ NSString *ID = @"20707401";
 NSString *Key = @"81ecd15b5c9d825f81d010ac2e067f3b";
 EdamamRequest *edamamReq;
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+    NSArray *Hits;
+}
 
 @property (weak, nonatomic) IBOutlet UITextField *requestTextField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 - (IBAction)touchDownSearch:(id)sender;
+-(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
+-(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
 
 @end
 

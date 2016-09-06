@@ -26,7 +26,11 @@
 }
 
 -(void)touchDownSearch:(id)sender{
-    NSLog(@"%@",[edamamReq recipeSearch:requestTextField.text]);
+    //NSLog(@"%@",[edamamReq recipeSearch:requestTextField.text]);
+    NSDictionary *dataFromEdamam = [edamamReq recipeSearch:requestTextField.text];
+    Hits = dataFromEdamam[@"hits"];
+   
+    
 }
 
 - (void)didReceiveMemoryWarning {
@@ -42,18 +46,21 @@
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
     UILabel *title, *recipetext;
     UIImageView *pic;
-    NSInteger index = [indexPath row];
-    
-    //cell.textLabel.text = @"123";
+    NSDictionary *Hit = Hits[3];
+    NSDictionary *Recipe = Hit[@"recipe"];
+    NSString *recipeLabel = Recipe[@"label"];
     
     title = (UILabel *)[cell.contentView viewWithTag:1001];
-    title.text  = (@"Recipe - %@", [[NSNumber numberWithInteger:index] stringValue]);
+    title.text  = (@"hgh%@",recipeLabel);
     
     recipetext = (UILabel *)[cell.contentView viewWithTag:1003];
     recipetext.text  = (@"recipe text ");
     
     pic = (UIImageView *)[cell.contentView viewWithTag:1002];
     pic.image = [UIImage imageNamed:@""];
+    
+    //cell.textLabel.text = @"123";
+    
     return cell;
 }
 @end

@@ -17,5 +17,5 @@
 }
     -(void) setAppID : (NSString*) theAppID;
     -(void) setAppKey : (NSString*) theAppKey;
-    -(NSString*) recipeSearch : (NSString*) queryText;
+    -(NSDictionary*) recipeSearch : (NSString*) queryText;
 @end
