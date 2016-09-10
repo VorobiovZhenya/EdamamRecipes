@@ -24,6 +24,8 @@
     URLString = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.edamam.com/search?q=%@&app_id=%@&app_key=%@", queryText, appID, appKey]];
     
     responseData = [NSData dataWithContentsOfURL:URLString];
+    NSLog(@"%@",[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
+
     NSError *error = nil;
     NSDictionary *Hits = [NSJSONSerialization
                  JSONObjectWithData:responseData

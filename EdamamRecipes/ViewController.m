@@ -25,42 +25,54 @@
     [edamamReq setAppKey:Key];
 }
 
--(void)touchDownSearch:(id)sender{
-    //NSLog(@"%@",[edamamReq recipeSearch:requestTextField.text]);
-    NSDictionary *dataFromEdamam = [edamamReq recipeSearch:requestTextField.text];
-    Hits = dataFromEdamam[@"hits"];
-   
-    
-}
-
 - (void)didReceiveMemoryWarning {
     [super didReceiveMemoryWarning];
     // Dispose of any resources that can be recreated.
 }
 -(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section{
-    NSInteger count = 10; //Number of rows
+    NSInteger count = 8; //Number of rows
     return count;
 }
 -(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
     
     UITableViewCell *cell = [tableView dequeueReusableCellWithIdentifier:@"Cell"];
-    UILabel *title, *recipetext;
-    UIImageView *pic;
-    NSDictionary *Hit = Hits[3];
+    UILabel *title, *recipeText;
+    UIImageView *img;
+    NSInteger index = indexPath.row;
+    
+    NSDictionary *Hit = Hits[index];
     NSDictionary *Recipe = Hit[@"recipe"];
     NSString *recipeLabel = Recipe[@"label"];
+    NSString *recipeImage = Recipe[@"image"]; //Recipe image URL
+    NSArray *ingredientLines = Recipe[@"ingredientLines"]; //Array of ingredients
+    NSString *ingredientsString = @""; // Array of ingredients in one string
+    
+    NSURL *imgUrl = [NSURL URLWithString:recipeImage];
+    NSData *imgData = [NSData dataWithContentsOfURL:imgUrl];
+    
     
     title = (UILabel *)[cell.contentView viewWithTag:1001];
-    title.text  = (@"hgh%@",recipeLabel);
-    
-    recipetext = (UILabel *)[cell.contentView viewWithTag:1003];
-    recipetext.text  = (@"recipe text ");
-    
-    pic = (UIImageView *)[cell.contentView viewWithTag:1002];
-    pic.image = [UIImage imageNamed:@""];
-    
-    //cell.textLabel.text = @"123";
+    [title setText:recipeLabel];
+
+    recipeText = (UILabel *)[cell.contentView viewWithTag:1003];
+    for(int i =0; i<ingredientLines.count; i++)
+    {
+        if (i!=0)  ingredientsString = [ingredientsString stringByAppendingFormat:@", %@",ingredientLines[i]];
+            else   ingredientsString = [ingredientsString stringByAppendingFormat:@"%@",ingredientLines[i]];
+    }
+    [recipeText setText:ingredientsString];
+        
+    img = (UIImageView *)[cell.contentView viewWithTag:1002];
+    img.image = [[UIImage alloc] initWithData:imgData scale:1];
     
     return cell;
+}
+-(void)touchDownSearch:(id)sender{
+    NSLog(@"Query - %@", requestTextField.text);
+    NSLog(@"%@",[edamamReq recipeSearch:requestTextField.text]);
+    NSDictionary *dataFromEdamam = [edamamReq recipeSearch:requestTextField.text];
+    Hits = dataFromEdamam[@"hits"];
+    [self.tableView reloadData];
+    
 }
 @end

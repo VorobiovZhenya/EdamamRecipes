@@ -19,9 +19,7 @@ EdamamRequest *edamamReq;
 
 @property (weak, nonatomic) IBOutlet UITextField *requestTextField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
+@property (weak, nonatomic) IBOutlet UITableView *tableView;
 - (IBAction)touchDownSearch:(id)sender;
--(UITableViewCell *)tableView:(UITableView *)tableView cellForRowAtIndexPath:(NSIndexPath *)indexPath;
--(NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section;
-
 @end
 
