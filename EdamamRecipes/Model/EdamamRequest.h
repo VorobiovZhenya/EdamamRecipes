@@ -12,10 +12,15 @@
 {
     NSString *appID;
     NSString *appKey;
-    NSURL *URLString;
-    NSData *responseData;
+    NSDictionary *results;
+    NSInteger countOfResults;
+    NSArray *hits;
 }
     -(void) setAppID : (NSString*) theAppID;
     -(void) setAppKey : (NSString*) theAppKey;
-    -(NSDictionary*) recipeSearch : (NSString*) queryText;
+    -(void) recipeSearch : (NSString*) queryText;
+    -(NSInteger) count; //Number of results found
+    -(NSData*) getRecipeImg:(NSInteger)index;
+    -(NSString*) getRecipeLabel:(NSInteger)index;
+    -(NSString*) getRecipeIngredientsString:(NSInteger)index;
 @end

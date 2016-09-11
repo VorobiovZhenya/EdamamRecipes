@@ -12,9 +12,10 @@
 NSString *ID = @"20707401";
 NSString *Key = @"81ecd15b5c9d825f81d010ac2e067f3b";
 EdamamRequest *edamamReq;
+NSInteger count; ///Number of results found
 
 @interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
-    NSArray *Hits;
+    
 }
 
 @property (weak, nonatomic) IBOutlet UITextField *requestTextField;
