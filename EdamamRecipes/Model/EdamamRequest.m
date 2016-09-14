@@ -18,10 +18,16 @@
     {
         appKey = theAppKey;
     }
--(void)recipeSearch:(NSString*)queryText
+-(void) setQueryText:(NSString *)theQueryText
+    {
+        from = 0;
+        queryText = theQueryText;
+        [self recipeSearch];
+    }
+-(void)recipeSearch
 {
     // https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}
-    NSURL *URLString = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.edamam.com/search?q=%@&app_id=%@&app_key=%@", queryText, appID, appKey]];
+    NSURL *URLString = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.edamam.com/search?q=%@&from=%li&app_id=%@&app_key=%@",queryText ,from ,  appID, appKey]];
     
     NSData *responseData = [NSData dataWithContentsOfURL:URLString];
     NSLog(@"%@",[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
@@ -40,6 +46,14 @@
 }
 -(NSData*) getRecipeImg:(NSInteger)index
 {
+    if (index >= [hits count])
+    {
+        from = index;
+        NSArray *tmpHits = hits;
+        [self recipeSearch];
+        [tmpHits arrayByAddingObjectsFromArray:hits];
+        hits = tmpHits;
+    }
     NSDictionary *recipe = hits[index][@"recipe"];
     NSString *recipeImage = recipe[@"image"];
     NSURL *imgUrl = [NSURL URLWithString:recipeImage];
@@ -48,6 +62,14 @@
 }
 -(NSString*) getRecipeLabel:(NSInteger)index
 {
+    if (index >= [hits count])
+    {
+        from = index;
+        NSMutableArray *tmpHits = [[NSMutableArray alloc] initWithArray:hits];
+        [self recipeSearch];
+        //[tmpHits addObjectsFromArray:hits];
+        hits = [tmpHits arrayByAddingObjectsFromArray:hits];
+    }
     NSDictionary *recipe = hits[index][@"recipe"];
     return recipe[@"label"];
 }

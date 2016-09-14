@@ -34,7 +34,7 @@
     NSInteger numberOfRows;//Number of rows
 
     if (count == 0) numberOfRows = 0;
-        else numberOfRows = 10;
+        else numberOfRows = count;
     
     return numberOfRows;
 }
@@ -60,8 +60,9 @@
 }
 -(void)touchDownSearch:(id)sender{
     NSLog(@"Query - %@", requestTextField.text);
-    [edamamReq recipeSearch:requestTextField.text];
+    [edamamReq setQueryText:requestTextField.text];
     count = [edamamReq count];
+    [self.tableView setContentOffset:CGPointZero];
     [self.tableView reloadData];
     
 }
