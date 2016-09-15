@@ -58,6 +58,12 @@
         }
     return cell;
 }
+-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
+{
+    UIViewController *recipeDetailsView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsView"];
+    //self.view =recipeDetailsView.view;
+    [self presentViewController:recipeDetailsView animated:YES completion:^(void){}];
+}
 -(void)touchDownSearch:(id)sender{
     NSLog(@"Query - %@", requestTextField.text);
     [edamamReq setQueryText:requestTextField.text];
