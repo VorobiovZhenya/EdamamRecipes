@@ -7,11 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE4946541DBD5ED000D22D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4946521DBD5ED000D22D75 /* Main.storyboard */; };
 		EE93A6381D626EAF009256FA /* EdamamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE93A6371D626EAF009256FA /* EdamamRequest.m */; };
 		EED97E2F1D5FBAE500B1754D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E2E1D5FBAE500B1754D /* main.m */; };
 		EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E311D5FBAE500B1754D /* AppDelegate.m */; };
 		EED97E351D5FBAE500B1754D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E341D5FBAE500B1754D /* ViewController.m */; };
-		EED97E381D5FBAE500B1754D /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED97E361D5FBAE500B1754D /* Main.storyboard */; };
 		EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */; };
 		EED97E3D1D5FBAE500B1754D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3C1D5FBAE500B1754D /* Assets.xcassets */; };
 		EED97E401D5FBAE500B1754D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */; };
@@ -19,6 +19,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE4946531DBD5ED000D22D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE93A6361D626EAF009256FA /* EdamamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdamamRequest.h; path = Model/EdamamRequest.h; sourceTree = "<group>"; };
 		EE93A6371D626EAF009256FA /* EdamamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdamamRequest.m; path = Model/EdamamRequest.m; sourceTree = "<group>"; };
 		EED97E2A1D5FBAE500B1754D /* EdamamRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdamamRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -27,7 +28,6 @@
 		EED97E311D5FBAE500B1754D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
 		EED97E331D5FBAE500B1754D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
 		EED97E341D5FBAE500B1754D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
-		EED97E371D5FBAE500B1754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EED97E3A1D5FBAE500B1754D /* EdamamRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EdamamRecipes.xcdatamodel; sourceTree = "<group>"; };
 		EED97E3C1D5FBAE500B1754D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED97E3F1D5FBAE500B1754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -89,7 +89,7 @@
 				EED97E341D5FBAE500B1754D /* ViewController.m */,
 				EED97E3C1D5FBAE500B1754D /* Assets.xcassets */,
 				EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */,
-				EED97E361D5FBAE500B1754D /* Main.storyboard */,
+				EE4946521DBD5ED000D22D75 /* Main.storyboard */,
 				EED97E411D5FBAE500B1754D /* Info.plist */,
 				EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */,
 				EED97E471D5FCE7D00B1754D /* Resources */,
@@ -174,7 +174,7 @@
 				EED97E491D5FCFA800B1754D /* logo-site-header.png in Resources */,
 				EED97E401D5FBAE500B1754D /* LaunchScreen.storyboard in Resources */,
 				EED97E3D1D5FBAE500B1754D /* Assets.xcassets in Resources */,
-				EED97E381D5FBAE500B1754D /* Main.storyboard in Resources */,
+				EE4946541DBD5ED000D22D75 /* Main.storyboard in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -196,10 +196,10 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXVariantGroup section */
-		EED97E361D5FBAE500B1754D /* Main.storyboard */ = {
+		EE4946521DBD5ED000D22D75 /* Main.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
-				EED97E371D5FBAE500B1754D /* Base */,
+				EE4946531DBD5ED000D22D75 /* Base */,
 			);
 			name = Main.storyboard;
 			sourceTree = "<group>";
