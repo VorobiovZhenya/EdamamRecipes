@@ -27,7 +27,7 @@
 -(void)recipeSearch
 {
     // https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}
-    NSURL *URLString = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.edamam.com/search?q=%@&from=%li&app_id=%@&app_key=%@",queryText ,from ,  appID, appKey]];
+    NSURL *URLString = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.edamam.com/search?q=%@&from=%li&app_id=%@&app_key=%@",queryText ,(long)from ,  appID, appKey]];
     
     NSData *responseData = [NSData dataWithContentsOfURL:URLString];
     NSLog(@"%@",[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);

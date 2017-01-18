@@ -8,16 +8,16 @@
 
 #import <UIKit/UIKit.h>
 #import "EdamamRequest.h"
+#import "RecipeDetailViewController.h"
 
 NSString *ID = @"20707401";
 NSString *Key = @"81ecd15b5c9d825f81d010ac2e067f3b";
 EdamamRequest *edamamReq;
 NSInteger count; ///Number of results found
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate>{
+@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>{
     
 }
-
 @property (weak, nonatomic) IBOutlet UITextField *requestTextField;
 @property (weak, nonatomic) IBOutlet UIButton *searchButton;
 @property (weak, nonatomic) IBOutlet UITableView *tableView;

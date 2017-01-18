@@ -13,7 +13,7 @@
     NSString *appID;
     NSString *appKey;
     NSString *queryText;
-    NSInteger from; //First result index
+    NSInteger from; //the initial value of the index for searching
     NSDictionary *results;
     NSArray *hits;
 }

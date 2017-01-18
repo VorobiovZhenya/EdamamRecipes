@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		EE3760431E30098400F562D7 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3760421E30098400F562D7 /* RecipeDetailViewController.m */; };
 		EE4946541DBD5ED000D22D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4946521DBD5ED000D22D75 /* Main.storyboard */; };
 		EE93A6381D626EAF009256FA /* EdamamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE93A6371D626EAF009256FA /* EdamamRequest.m */; };
 		EED97E2F1D5FBAE500B1754D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E2E1D5FBAE500B1754D /* main.m */; };
@@ -19,6 +20,8 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		EE3760411E30098400F562D7 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
+		EE3760421E30098400F562D7 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		EE4946531DBD5ED000D22D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		EE93A6361D626EAF009256FA /* EdamamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdamamRequest.h; path = Model/EdamamRequest.h; sourceTree = "<group>"; };
 		EE93A6371D626EAF009256FA /* EdamamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdamamRequest.m; path = Model/EdamamRequest.m; sourceTree = "<group>"; };
@@ -85,6 +88,8 @@
 				EE93A6351D626E01009256FA /* Model */,
 				EED97E301D5FBAE500B1754D /* AppDelegate.h */,
 				EED97E311D5FBAE500B1754D /* AppDelegate.m */,
+				EE3760411E30098400F562D7 /* RecipeDetailViewController.h */,
+				EE3760421E30098400F562D7 /* RecipeDetailViewController.m */,
 				EED97E331D5FBAE500B1754D /* ViewController.h */,
 				EED97E341D5FBAE500B1754D /* ViewController.m */,
 				EED97E3C1D5FBAE500B1754D /* Assets.xcassets */,
@@ -186,6 +191,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				EED97E351D5FBAE500B1754D /* ViewController.m in Sources */,
+				EE3760431E30098400F562D7 /* RecipeDetailViewController.m in Sources */,
 				EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */,
 				EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */,
 				EED97E2F1D5FBAE500B1754D /* main.m in Sources */,
@@ -252,7 +258,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -290,8 +296,9 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
+				ONLY_ACTIVE_ARCH = NO;
 				SDKROOT = iphoneos;
 				VALIDATE_PRODUCT = YES;
 			};

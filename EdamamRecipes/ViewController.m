@@ -9,14 +9,12 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
 @end
 
 @implementation ViewController
 
 @synthesize requestTextField;
 @synthesize searchButton;
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     NSLog(@"viewdidload");
@@ -24,6 +22,8 @@
     [edamamReq setAppID:ID];
     [edamamReq setAppKey:Key];
     count = 0;
+    //UITapGestureRecognizer *handleTap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(endEditing)]; // Hide keyboard when tapping screen
+    //[self.view addGestureRecognizer:handleTap];
 }
 
 - (void)didReceiveMemoryWarning {
@@ -58,19 +58,43 @@
         }
     return cell;
 }
-/*-(void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath
-    {
-    UIViewController *recipeDetailsView = [self.storyboard instantiateViewControllerWithIdentifier:@"DetailsView"];
-    //self.view =recipeDetailsView.view;
-    [self presentViewController:recipeDetailsView animated:YES completion:^(void){}];
-    } 
- */
+
 -(void)touchDownSearch:(id)sender{
+    [self startSearch];
+    [self endEditing];
+}
+
+-(void)startSearch{
+    
     NSLog(@"Query - %@", requestTextField.text);
     [edamamReq setQueryText:requestTextField.text];
     count = [edamamReq count];
     [self.tableView setContentOffset:CGPointZero];
     [self.tableView reloadData];
-    
 }
+
+-(void)endEditing{
+    // Hide keyboard from the screen
+    [self.view endEditing:YES];
+    NSLog(@"endEditing");
+}
+
+- (BOOL)textFieldShouldReturn:(UITextField *)textField{
+    [self.requestTextField	resignFirstResponder];
+    [self startSearch];
+    return YES;
+}
+
+-(void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender{
+    if ([[segue identifier] isEqualToString:@"Segue to recipe details"])
+    {
+        NSInteger selectedRow = [self.tableView indexPathForSelectedRow].row;
+        RecipeDetailViewController *destViewController = segue.destinationViewController;
+        destViewController.recipeName = [edamamReq getRecipeLabel:selectedRow];
+        UIImageView *recipeImage = (UIImageView *)[destViewController.view viewWithTag:2001];
+        recipeImage.image = [[UIImage alloc] initWithData:[edamamReq getRecipeImg:selectedRow] scale:1];
+        
+    }
+}
+//@synthesize tableView;
 @end

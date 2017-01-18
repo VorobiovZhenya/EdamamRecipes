@@ -19,7 +19,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <imageView opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" fixedFrame="YES" image="logo-site-header.png" translatesAutoresizingMaskIntoConstraints="NO" id="UNm-Zj-7Jy">
-                                <frame key="frameInset" minX="149" minY="345" width="116" height="45"/>
+                                <frame key="frameInset" minX="129" minY="311" width="116" height="45"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                         </subviews>
