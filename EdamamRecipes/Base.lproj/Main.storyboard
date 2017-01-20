@@ -125,12 +125,12 @@
                         <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleToFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="n2O-XK-gyC">
+                            <imageView userInteractionEnabled="NO" tag="2001" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" id="n2O-XK-gyC">
                                 <frame key="frameInset" minX="16" minY="136" width="343" height="208"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             </imageView>
                             <label opaque="NO" userInteractionEnabled="NO" tag="2002" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" text="Label" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" id="Wr8-Kn-QWX">
-                                <frame key="frameInset" minX="73" minY="80" width="200" height="33"/>
+                                <frame key="frameInset" minX="16" minY="80" width="343" height="33"/>
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
@@ -142,7 +142,7 @@
                     <navigationItem key="navigationItem" id="UFD-jI-WU4"/>
                     <simulatedToolbarMetrics key="simulatedBottomBarMetrics"/>
                     <connections>
-                        <outlet property="recipeImage" destination="n2O-XK-gyC" id="n2K-wz-EeL"/>
+                        <outlet property="recipeImage" destination="n2O-XK-gyC" id="9yA-Gz-skh"/>
                         <outlet property="recipeTitle" destination="Wr8-Kn-QWX" id="h6p-yU-Kew"/>
                         <outlet property="searchDisplayController" destination="jGQ-Zt-TaK" id="Lyw-BY-uia"/>
                     </connections>

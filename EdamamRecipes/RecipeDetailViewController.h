@@ -11,8 +11,8 @@
 @interface RecipeDetailViewController : UIViewController
 
 @property (weak, nonatomic) IBOutlet UILabel *recipeTitle;
-@property (weak, nonatomic) IBOutlet UIImageView *recipeImage;
 @property (weak, nonatomic) IBOutlet NSString *recipeName;
 @property (weak, nonatomic) IBOutlet NSData *recipeImageData;
+@property (weak, nonatomic) IBOutlet UIImageView *recipeImage;
 
 @end

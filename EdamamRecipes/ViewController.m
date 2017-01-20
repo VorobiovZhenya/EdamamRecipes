@@ -91,8 +91,9 @@
         NSInteger selectedRow = [self.tableView indexPathForSelectedRow].row;
         RecipeDetailViewController *destViewController = segue.destinationViewController;
         destViewController.recipeName = [edamamReq getRecipeLabel:selectedRow];
+        //destViewController.recipeImageData = [edamamReq getRecipeImg:selectedRow];
         UIImageView *recipeImage = (UIImageView *)[destViewController.view viewWithTag:2001];
-        recipeImage.image = [[UIImage alloc] initWithData:[edamamReq getRecipeImg:selectedRow] scale:1];
+        recipeImage.image = [[UIImage alloc] initWithData:[edamamReq getRecipeImg:selectedRow]];
         
     }
 }
