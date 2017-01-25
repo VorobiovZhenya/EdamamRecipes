@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  RecipeSearchViewController.h
 //  EdamamRecipes
 //
 //  Created by Zhenya on 8/13/16.
@@ -15,7 +15,7 @@ NSString *Key = @"81ecd15b5c9d825f81d010ac2e067f3b";
 EdamamRequest *edamamReq;
 NSInteger count; ///Number of results found
 
-@interface ViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>{
+@interface RecipeSearchViewController : UIViewController <UITableViewDataSource, UITableViewDelegate, UITextFieldDelegate>{
     
 }
 @property (weak, nonatomic) IBOutlet UITextField *requestTextField;

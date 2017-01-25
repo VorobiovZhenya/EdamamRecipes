@@ -18,12 +18,27 @@
 @synthesize recipeImageData;
 @synthesize recipeName;
 @synthesize recipeImage;
+@synthesize ingradientsList;
+@synthesize detailsTableView;
 
 - (void)viewDidLoad {
     [super viewDidLoad];
     [recipeTitle setText:recipeName];
-    UIImageView * recipeImage = (UIImageView *)[self.view viewWithTag:2001];
+    
+    //UIImageView * recipeImage = (UIImageView *)[self.view viewWithTag:2001];
     //recipeImage.image = [[UIImage alloc] initWithData:recipeImageData scale:1];
+}
+
+-(NSInteger)tableView:(UITableView *)detailsTableView numberOfRowsInSection:(NSInteger)section{
+    return ingradientsList.count;
+}
+
+-(UITableViewCell*)tableView:(UITableView *)detailsTableView cellForRowAtIndexPath:(NSIndexPath *)indexPath{
+    UITableViewCell *cell = [detailsTableView dequeueReusableCellWithIdentifier:@"Cell"];
+    UILabel *ingradient;
+    ingradient = (UILabel *)[cell.contentView viewWithTag:2003];
+    [ingradient setText:ingradientsList[indexPath.row]];
+    return cell;
 }
 
 - (void)didReceiveMemoryWarning {

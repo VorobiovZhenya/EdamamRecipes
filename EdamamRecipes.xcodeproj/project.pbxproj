@@ -12,7 +12,7 @@
 		EE93A6381D626EAF009256FA /* EdamamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE93A6371D626EAF009256FA /* EdamamRequest.m */; };
 		EED97E2F1D5FBAE500B1754D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E2E1D5FBAE500B1754D /* main.m */; };
 		EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E311D5FBAE500B1754D /* AppDelegate.m */; };
-		EED97E351D5FBAE500B1754D /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E341D5FBAE500B1754D /* ViewController.m */; };
+		EED97E351D5FBAE500B1754D /* RecipeSearchViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E341D5FBAE500B1754D /* RecipeSearchViewController.m */; };
 		EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = EED97E391D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld */; };
 		EED97E3D1D5FBAE500B1754D /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3C1D5FBAE500B1754D /* Assets.xcassets */; };
 		EED97E401D5FBAE500B1754D /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */; };
@@ -29,8 +29,8 @@
 		EED97E2E1D5FBAE500B1754D /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		EED97E301D5FBAE500B1754D /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		EED97E311D5FBAE500B1754D /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
-		EED97E331D5FBAE500B1754D /* ViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
-		EED97E341D5FBAE500B1754D /* ViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		EED97E331D5FBAE500B1754D /* RecipeSearchViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = RecipeSearchViewController.h; sourceTree = "<group>"; };
+		EED97E341D5FBAE500B1754D /* RecipeSearchViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = RecipeSearchViewController.m; sourceTree = "<group>"; };
 		EED97E3A1D5FBAE500B1754D /* EdamamRecipes.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = EdamamRecipes.xcdatamodel; sourceTree = "<group>"; };
 		EED97E3C1D5FBAE500B1754D /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		EED97E3F1D5FBAE500B1754D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -88,10 +88,10 @@
 				EE93A6351D626E01009256FA /* Model */,
 				EED97E301D5FBAE500B1754D /* AppDelegate.h */,
 				EED97E311D5FBAE500B1754D /* AppDelegate.m */,
+				EED97E331D5FBAE500B1754D /* RecipeSearchViewController.h */,
+				EED97E341D5FBAE500B1754D /* RecipeSearchViewController.m */,
 				EE3760411E30098400F562D7 /* RecipeDetailViewController.h */,
 				EE3760421E30098400F562D7 /* RecipeDetailViewController.m */,
-				EED97E331D5FBAE500B1754D /* ViewController.h */,
-				EED97E341D5FBAE500B1754D /* ViewController.m */,
 				EED97E3C1D5FBAE500B1754D /* Assets.xcassets */,
 				EED97E3E1D5FBAE500B1754D /* LaunchScreen.storyboard */,
 				EE4946521DBD5ED000D22D75 /* Main.storyboard */,
@@ -145,7 +145,7 @@
 		EED97E221D5FBAE500B1754D /* Project object */ = {
 			isa = PBXProject;
 			attributes = {
-				LastUpgradeCheck = 0730;
+				LastUpgradeCheck = 0800;
 				ORGANIZATIONNAME = Zhenka;
 				TargetAttributes = {
 					EED97E291D5FBAE500B1754D = {
@@ -190,7 +190,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EED97E351D5FBAE500B1754D /* ViewController.m in Sources */,
+				EED97E351D5FBAE500B1754D /* RecipeSearchViewController.m in Sources */,
 				EE3760431E30098400F562D7 /* RecipeDetailViewController.m in Sources */,
 				EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */,
 				EED97E3B1D5FBAE500B1754D /* EdamamRecipes.xcdatamodeld in Sources */,
@@ -235,8 +235,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
@@ -279,8 +281,10 @@
 				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
 				CLANG_WARN_EMPTY_BODY = YES;
 				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
 				CLANG_WARN_INT_CONVERSION = YES;
 				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
 				CLANG_WARN_UNREACHABLE_CODE = YES;
 				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
 				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";

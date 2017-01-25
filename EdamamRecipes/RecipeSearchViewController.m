@@ -1,17 +1,17 @@
 //
-//  ViewController.m
+//  RecipeSearchViewController.m
 //  EdamamRecipes
 //
 //  Created by Zhenya on 8/13/16.
 //  Copyright © 2016 Zhenka. All rights reserved.
 //
 
-#import "ViewController.h"
+#import "RecipeSearchViewController.h"
 
-@interface ViewController ()
+@interface RecipeSearchViewController ()
 @end
 
-@implementation ViewController
+@implementation RecipeSearchViewController
 
 @synthesize requestTextField;
 @synthesize searchButton;
@@ -94,6 +94,8 @@
         //destViewController.recipeImageData = [edamamReq getRecipeImg:selectedRow];
         UIImageView *recipeImage = (UIImageView *)[destViewController.view viewWithTag:2001];
         recipeImage.image = [[UIImage alloc] initWithData:[edamamReq getRecipeImg:selectedRow]];
+        destViewController.ingradientsList = [edamamReq getReciepeIngredientsArray:selectedRow];
+        
         
     }
 }

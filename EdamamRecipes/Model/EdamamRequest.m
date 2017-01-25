@@ -21,22 +21,46 @@
 -(void) setQueryText:(NSString *)theQueryText
     {
         from = 0;
-        queryText = theQueryText;
+        //NSMutableString *query = theQueryText;
+        queryText = [theQueryText stringByReplacingOccurrencesOfString:@" " withString:@"%20"];
         [self recipeSearch];
+
     }
+
 -(void)recipeSearch
 {
     // https://api.edamam.com/search?q=chicken&app_id=${YOUR_APP_ID}&app_key=${YOUR_APP_KEY}
     NSURL *URLString = [NSURL URLWithString:[NSString stringWithFormat:@"https://api.edamam.com/search?q=%@&from=%li&app_id=%@&app_key=%@",queryText ,(long)from ,  appID, appKey]];
     
-    NSData *responseData = [NSData dataWithContentsOfURL:URLString];
+    /*NSURLRequest *URLRequest = [[NSURLRequest alloc] initWithURL:URLString];
+    NSURLSessionConfiguration *sessionConfig = [NSURLSessionConfiguration defaultSessionConfiguration];
+    NSURLSession *session = [NSURLSession sessionWithConfiguration:sessionConfig delegate:nil delegateQueue:0];
+    NSURLSessionDataTask *sesTask = [session dataTaskWithRequest:URLRequest completionHandler:^(NSData *data, NSURLResponse *response, NSError *error)
+        {
+            //if(error == nil)
+            {
+                NSString * text = [[NSString alloc] initWithData: data encoding: NSUTF8StringEncoding];
+                NSLog(@"Data = %@",text);
+            }
+            //responseData = [[NSData alloc] initWithData:respData];
+        }];
+    [sesTask resume];
+    [sesTask cancel];
+    */
+    NSError *error = nil;
+    NSData *responseData = [NSData dataWithContentsOfURL:URLString options:0 error:&error];
+    if (error){
+        NSLog(@"Response hadn't been gotten!");
+        }
     NSLog(@"%@",[[NSString alloc] initWithData:responseData encoding:NSUTF8StringEncoding]);
 
-    NSError *error = nil;
     results = [NSJSONSerialization
                  JSONObjectWithData:responseData
                  options:0
                  error:&error];
+    if (error){
+        NSLog(@"Response hadn't been parsed!");
+    }
      hits = results[@"hits"];
 }
 -(NSInteger) count
@@ -86,4 +110,11 @@
     }
     return ingredientsString;
 }
+-(NSArray*) getReciepeIngredientsArray:(NSInteger)index
+{
+    NSDictionary *recipe = hits[index][@"recipe"];
+    NSArray *ingredientLines = recipe[@"ingredientLines"]; //Ingredients list
+    return ingredientLines;
+}
+
 @end

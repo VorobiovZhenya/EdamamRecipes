@@ -16,6 +16,7 @@
     NSInteger from; //the initial value of the index for searching
     NSDictionary *results;
     NSArray *hits;
+    //NSData * responseData;
 }
     -(void) setAppID : (NSString*) theAppID;
     -(void) setAppKey : (NSString*) theAppKey;
@@ -25,4 +26,5 @@
     -(NSData*) getRecipeImg:(NSInteger)index;
     -(NSString*) getRecipeLabel:(NSInteger)index;
     -(NSString*) getRecipeIngredientsString:(NSInteger)index;
+    -(NSArray*) getReciepeIngredientsArray:(NSInteger)index;
 @end

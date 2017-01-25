@@ -8,11 +8,14 @@
 
 #import <UIKit/UIKit.h>
 
-@interface RecipeDetailViewController : UIViewController
+@interface RecipeDetailViewController : UIViewController <UITableViewDelegate, UITableViewDataSource>{
+    
+}
 
 @property (weak, nonatomic) IBOutlet UILabel *recipeTitle;
-@property (weak, nonatomic) IBOutlet NSString *recipeName;
-@property (weak, nonatomic) IBOutlet NSData *recipeImageData;
+@property (weak, nonatomic) NSString *recipeName;
+@property (weak, nonatomic) NSData *recipeImageData;
 @property (weak, nonatomic) IBOutlet UIImageView *recipeImage;
-
+@property (weak, nonatomic) NSArray *ingradientsList;
+@property (weak, nonatomic) IBOutlet UITableView *detailsTableView;
 @end
