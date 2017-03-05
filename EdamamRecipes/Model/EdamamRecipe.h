@@ -10,11 +10,12 @@
 
 @interface EdamamRecipe : NSObject
 {
+    
     NSInteger count; //Number of results found
-    NSData* RecipeImg;
+    NSData*   RecipeImg;
     NSString* RecipeLabel;
     NSString* RecipeIngredientsString;
-    NSArray* ReciepeIngredientsArray;
+    NSArray*  ReciepeIngredientsArray;
 }
 
 @end
