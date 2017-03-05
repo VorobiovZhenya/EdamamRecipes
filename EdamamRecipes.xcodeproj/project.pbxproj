@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		EE3760431E30098400F562D7 /* RecipeDetailViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = EE3760421E30098400F562D7 /* RecipeDetailViewController.m */; };
 		EE4946541DBD5ED000D22D75 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = EE4946521DBD5ED000D22D75 /* Main.storyboard */; };
-		EE7E9D8D1E698CFC00E304F4 /* EdamamRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = EE7E9D8C1E698CFC00E304F4 /* EdamamRecipe.m */; };
 		EE93A6381D626EAF009256FA /* EdamamRequest.m in Sources */ = {isa = PBXBuildFile; fileRef = EE93A6371D626EAF009256FA /* EdamamRequest.m */; };
 		EED97E2F1D5FBAE500B1754D /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E2E1D5FBAE500B1754D /* main.m */; };
 		EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = EED97E311D5FBAE500B1754D /* AppDelegate.m */; };
@@ -24,8 +23,6 @@
 		EE3760411E30098400F562D7 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		EE3760421E30098400F562D7 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		EE4946531DBD5ED000D22D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		EE7E9D8B1E698CFC00E304F4 /* EdamamRecipe.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdamamRecipe.h; path = Model/EdamamRecipe.h; sourceTree = "<group>"; };
-		EE7E9D8C1E698CFC00E304F4 /* EdamamRecipe.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdamamRecipe.m; path = Model/EdamamRecipe.m; sourceTree = "<group>"; };
 		EE93A6361D626EAF009256FA /* EdamamRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = EdamamRequest.h; path = Model/EdamamRequest.h; sourceTree = "<group>"; };
 		EE93A6371D626EAF009256FA /* EdamamRequest.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = EdamamRequest.m; path = Model/EdamamRequest.m; sourceTree = "<group>"; };
 		EED97E2A1D5FBAE500B1754D /* EdamamRecipes.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = EdamamRecipes.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -63,8 +60,6 @@
 		EE93A6351D626E01009256FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
-				EE7E9D8C1E698CFC00E304F4 /* EdamamRecipe.m */,
-				EE7E9D8B1E698CFC00E304F4 /* EdamamRecipe.h */,
 				EE93A6361D626EAF009256FA /* EdamamRequest.h */,
 				EE93A6371D626EAF009256FA /* EdamamRequest.m */,
 			);
@@ -196,7 +191,6 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				EE7E9D8D1E698CFC00E304F4 /* EdamamRecipe.m in Sources */,
 				EED97E351D5FBAE500B1754D /* RecipeSearchViewController.m in Sources */,
 				EE3760431E30098400F562D7 /* RecipeDetailViewController.m in Sources */,
 				EED97E321D5FBAE500B1754D /* AppDelegate.m in Sources */,
