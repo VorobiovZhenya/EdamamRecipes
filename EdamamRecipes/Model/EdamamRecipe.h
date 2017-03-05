@@ -2,7 +2,7 @@
 //  EdamamRecipe.h
 //  EdamamRecipes
 //
-//  Created by Zhenya on 3/3/17.
+//  Created by Zhenya on 3/5/17.
 //  Copyright © 2017 Zhenka. All rights reserved.
 //
 
@@ -10,7 +10,11 @@
 
 @interface EdamamRecipe : NSObject
 {
-
+    NSInteger count; //Number of results found
+    NSData* RecipeImg;
+    NSString* RecipeLabel;
+    NSString* RecipeIngredientsString;
+    NSArray* ReciepeIngredientsArray;
 }
 
 @end
