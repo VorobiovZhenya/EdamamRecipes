@@ -9,6 +9,7 @@
 #import <UIKit/UIKit.h>
 #import "EdamamRequest.h"
 #import "RecipeDetailViewController.h"
+#import "EdamamRecipeSearch.h"
 
 NSString *ID = @"20707401";
 NSString *Key = @"81ecd15b5c9d825f81d010ac2e067f3b";

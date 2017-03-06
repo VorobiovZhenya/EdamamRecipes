@@ -20,7 +20,26 @@
 		EEFE341B1E6C97920093CD00 /* EdamamRecipe.m in Sources */ = {isa = PBXBuildFile; fileRef = EEFE341A1E6C97920093CD00 /* EdamamRecipe.m */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		EE3200191E6D951500978094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE3200151E6D951500978094 /* EdamamReciepeSearch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE3200081E6D8DC600978094;
+			remoteInfo = EdamamReciepeSearch;
+		};
+		EE3200251E6D97D100978094 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = EE3200211E6D97D100978094 /* EdamamReciepeSearch.xcodeproj */;
+			proxyType = 2;
+			remoteGlobalIDString = EE3200081E6D8DC600978094;
+			remoteInfo = EdamamReciepeSearch;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
+		EE3200151E6D951500978094 /* EdamamReciepeSearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EdamamReciepeSearch.xcodeproj; path = ../MyFrameworks/EdamamReciepeSearch/EdamamReciepeSearch.xcodeproj; sourceTree = "<group>"; };
+		EE3200211E6D97D100978094 /* EdamamReciepeSearch.xcodeproj */ = {isa = PBXFileReference; lastKnownFileType = "wrapper.pb-project"; name = EdamamReciepeSearch.xcodeproj; path = ../../MyFrameworks/EdamamReciepeSearch/EdamamReciepeSearch.xcodeproj; sourceTree = "<group>"; };
 		EE3760411E30098400F562D7 /* RecipeDetailViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RecipeDetailViewController.h; sourceTree = "<group>"; };
 		EE3760421E30098400F562D7 /* RecipeDetailViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RecipeDetailViewController.m; sourceTree = "<group>"; };
 		EE4946531DBD5ED000D22D75 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
@@ -60,6 +79,30 @@
 			name = Images;
 			sourceTree = "<group>";
 		};
+		EE3200141E6D951400978094 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				EE3200151E6D951500978094 /* EdamamReciepeSearch.xcodeproj */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		EE3200161E6D951500978094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE32001A1E6D951500978094 /* libEdamamReciepeSearch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EE3200221E6D97D100978094 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EE3200261E6D97D100978094 /* libEdamamReciepeSearch.a */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
 		EE93A6351D626E01009256FA /* Model */ = {
 			isa = PBXGroup;
 			children = (
@@ -77,6 +120,7 @@
 			children = (
 				EED97E2C1D5FBAE500B1754D /* EdamamRecipes */,
 				EED97E2B1D5FBAE500B1754D /* Products */,
+				EE3200141E6D951400978094 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -91,6 +135,7 @@
 		EED97E2C1D5FBAE500B1754D /* EdamamRecipes */ = {
 			isa = PBXGroup;
 			children = (
+				EE3200211E6D97D100978094 /* EdamamReciepeSearch.xcodeproj */,
 				EE93A6351D626E01009256FA /* Model */,
 				EED97E301D5FBAE500B1754D /* AppDelegate.h */,
 				EED97E311D5FBAE500B1754D /* AppDelegate.m */,
@@ -171,12 +216,39 @@
 			mainGroup = EED97E211D5FBAE500B1754D;
 			productRefGroup = EED97E2B1D5FBAE500B1754D /* Products */;
 			projectDirPath = "";
+			projectReferences = (
+				{
+					ProductGroup = EE3200161E6D951500978094 /* Products */;
+					ProjectRef = EE3200151E6D951500978094 /* EdamamReciepeSearch.xcodeproj */;
+				},
+				{
+					ProductGroup = EE3200221E6D97D100978094 /* Products */;
+					ProjectRef = EE3200211E6D97D100978094 /* EdamamReciepeSearch.xcodeproj */;
+				},
+			);
 			projectRoot = "";
 			targets = (
 				EED97E291D5FBAE500B1754D /* EdamamRecipes */,
 			);
 		};
 /* End PBXProject section */
+
+/* Begin PBXReferenceProxy section */
+		EE32001A1E6D951500978094 /* libEdamamReciepeSearch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEdamamReciepeSearch.a;
+			remoteRef = EE3200191E6D951500978094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+		EE3200261E6D97D100978094 /* libEdamamReciepeSearch.a */ = {
+			isa = PBXReferenceProxy;
+			fileType = archive.ar;
+			path = libEdamamReciepeSearch.a;
+			remoteRef = EE3200251E6D97D100978094 /* PBXContainerItemProxy */;
+			sourceTree = BUILT_PRODUCTS_DIR;
+		};
+/* End PBXReferenceProxy section */
 
 /* Begin PBXResourcesBuildPhase section */
 		EED97E281D5FBAE500B1754D /* Resources */ = {
